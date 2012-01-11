@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB3C65BC14BDE8EE00665478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3C65BB14BDE8EE00665478 /* Foundation.framework */; };
+		CB3C65BF14BDE8EE00665478 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3C65BE14BDE8EE00665478 /* main.m */; };
+		CB3C65C314BDE8EF00665478 /* plistToJSON.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB3C65C214BDE8EF00665478 /* plistToJSON.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB3C65B514BDE8EE00665478 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CB3C65C314BDE8EF00665478 /* plistToJSON.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB3C65B714BDE8EE00665478 /* plistToJSON */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = plistToJSON; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3C65BB14BDE8EE00665478 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB3C65BE14BDE8EE00665478 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB3C65C114BDE8EF00665478 /* plistToJSON-Prefix.pch */ = {isa = PBXFileReference; path = "plistToJSON-Prefix.pch"; sourceTree = "<group>"; };
+		CB3C65C214BDE8EF00665478 /* plistToJSON.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = plistToJSON.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB3C65B414BDE8EE00665478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3C65BC14BDE8EE00665478 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB3C65AC14BDE8EE00665478 = {
+			isa = PBXGroup;
+			children = (
+				CB3C65BD14BDE8EE00665478 /* plistToJSON */,
+				CB3C65BA14BDE8EE00665478 /* Frameworks */,
+				CB3C65B814BDE8EE00665478 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB3C65B814BDE8EE00665478 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C65B714BDE8EE00665478 /* plistToJSON */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB3C65BA14BDE8EE00665478 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C65BB14BDE8EE00665478 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB3C65BD14BDE8EE00665478 /* plistToJSON */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C65BE14BDE8EE00665478 /* main.m */,
+				CB3C65C214BDE8EF00665478 /* plistToJSON.1 */,
+				CB3C65C014BDE8EF00665478 /* Supporting Files */,
+			);
+			path = plistToJSON;
+			sourceTree = "<group>";
+		};
+		CB3C65C014BDE8EF00665478 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C65C114BDE8EF00665478 /* plistToJSON-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB3C65B614BDE8EE00665478 /* plistToJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3C65C614BDE8EF00665478 /* Build configuration list for PBXNativeTarget "plistToJSON" */;
+			buildPhases = (
+				CB3C65B314BDE8EE00665478 /* Sources */,
+				CB3C65B414BDE8EE00665478 /* Frameworks */,
+				CB3C65B514BDE8EE00665478 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plistToJSON;
+			productName = plistToJSON;
+			productReference = CB3C65B714BDE8EE00665478 /* plistToJSON */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB3C65AE14BDE8EE00665478 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Raizlabs Corporation";
+			};
+			buildConfigurationList = CB3C65B114BDE8EE00665478 /* Build configuration list for PBXProject "plistToJSON" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB3C65AC14BDE8EE00665478;
+			productRefGroup = CB3C65B814BDE8EE00665478 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB3C65B614BDE8EE00665478 /* plistToJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB3C65B314BDE8EE00665478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3C65BF14BDE8EE00665478 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB3C65C414BDE8EF00665478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CB3C65C514BDE8EF00665478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB3C65C714BDE8EF00665478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plistToJSON/plistToJSON-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB3C65C814BDE8EF00665478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plistToJSON/plistToJSON-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB3C65B114BDE8EE00665478 /* Build configuration list for PBXProject "plistToJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3C65C414BDE8EF00665478 /* Debug */,
+				CB3C65C514BDE8EF00665478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3C65C614BDE8EF00665478 /* Build configuration list for PBXNativeTarget "plistToJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3C65C714BDE8EF00665478 /* Debug */,
+				CB3C65C814BDE8EF00665478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB3C65AE14BDE8EE00665478 /* Project object */;
+}
