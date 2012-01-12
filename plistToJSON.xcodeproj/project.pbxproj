@@ -31,6 +31,7 @@
 		CB3C65BE14BDE8EE00665478 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB3C65C114BDE8EF00665478 /* plistToJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "plistToJSON-Prefix.pch"; sourceTree = "<group>"; };
 		CB3C65C214BDE8EF00665478 /* plistToJSON.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = plistToJSON.1; sourceTree = "<group>"; };
+		CBD3516614BF2E8000F419D6 /* sampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sampleData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		CB3C65AC14BDE8EE00665478 = {
 			isa = PBXGroup;
 			children = (
+				CBD3516414BF2E6300F419D6 /* Sample */,
 				CB3C65BD14BDE8EE00665478 /* plistToJSON */,
 				CB3C65BA14BDE8EE00665478 /* Frameworks */,
 				CB3C65B814BDE8EE00665478 /* Products */,
@@ -86,6 +88,14 @@
 				CB3C65C114BDE8EF00665478 /* plistToJSON-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBD3516414BF2E6300F419D6 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				CBD3516614BF2E8000F419D6 /* sampleData.plist */,
+			);
+			name = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +240,7 @@
 				CB3C65C814BDE8EF00665478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
