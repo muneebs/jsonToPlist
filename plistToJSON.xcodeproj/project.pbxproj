@@ -29,7 +29,7 @@
 		CB3C65B714BDE8EE00665478 /* plistToJSON */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = plistToJSON; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3C65BB14BDE8EE00665478 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CB3C65BE14BDE8EE00665478 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CB3C65C114BDE8EF00665478 /* plistToJSON-Prefix.pch */ = {isa = PBXFileReference; path = "plistToJSON-Prefix.pch"; sourceTree = "<group>"; };
+		CB3C65C114BDE8EF00665478 /* plistToJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "plistToJSON-Prefix.pch"; sourceTree = "<group>"; };
 		CB3C65C214BDE8EF00665478 /* plistToJSON.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = plistToJSON.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
