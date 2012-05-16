@@ -8,16 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-int main (int argc, const char * argv[])
+int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
         if(argc < 2)
-        {
+            {
             printf("Not enough arguments; missing plist file.\n");
             return 1;
-        }
+            }
         
         NSFileManager *filemgr;
         NSString *currentpath;
@@ -26,38 +26,42 @@ int main (int argc, const char * argv[])
         
         currentpath = [filemgr currentDirectoryPath];
         
-        // try to find the full path to the spcified file.
+            // try to find the full path to the spcified file.
         NSString* path = [NSString stringWithCString:argv[1] encoding:NSUTF8StringEncoding];
         if(![filemgr fileExistsAtPath:path])
-        {
-            // path was not absolute or did not exist. Try looking in the current path. 
+            {
+                // path was not absolute or did not exist. Try looking in the current path.
             path = [currentpath stringByAppendingPathComponent:path];
             
             if(![filemgr fileExistsAtPath:path])
-            {
+                {
                 printf("Could not find file %s\n", argv[1]);
                 return 1;
+                }
             }
-        }
         
+        NSDictionary* dictionary;
+        NSArray *array;
         
-        NSDictionary* dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+        dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
         if (nil == dictionary) {
-            printf("Could not parse plist file %s\n", argv[1]);
-            return 1;
+            array = [NSArray arrayWithContentsOfFile:path];
         }
-        
         
         NSError* error = nil;
-        
-        NSData* data = [NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:&error];
+        NSData* data;
+        if (dictionary != nil) {
+            data = [NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:&error];
+        } else {
+            data = [NSJSONSerialization dataWithJSONObject:array options:NSJSONWritingPrettyPrinted error:&error];
+        }
         
         if(nil == data)
-        {
+            {
             NSString* errorMessage = [NSString stringWithFormat:@"There was an error converting to JSON: %@", error];
             printf("%s", [errorMessage cStringUsingEncoding:NSUTF8StringEncoding]);
             return 1;
-        }
+            }
         
         path = [path stringByAppendingPathExtension:@"json"];
         
